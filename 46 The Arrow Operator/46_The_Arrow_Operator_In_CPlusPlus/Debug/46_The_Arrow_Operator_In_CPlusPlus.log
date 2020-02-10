@@ -1,0 +1,7 @@
+﻿  The_Arrow-Operator.cpp
+c:\dev\thechernoproject\46_the_arrow_operator_in_cplusplus\46_the_arrow_operator_in_cplusplus\the_arrow-operator.cpp(33): error C3381: 'ScopedPtr::Vector3': assembly access specifiers are only available in code compiled with a /clr option
+c:\dev\thechernoproject\46_the_arrow_operator_in_cplusplus\46_the_arrow_operator_in_cplusplus\the_arrow-operator.cpp(42): error C2065: 'Vector3': undeclared identifier
+c:\dev\thechernoproject\46_the_arrow_operator_in_cplusplus\46_the_arrow_operator_in_cplusplus\the_arrow-operator.cpp(42): error C2146: syntax error: missing ';' before identifier 'vec'
+c:\dev\thechernoproject\46_the_arrow_operator_in_cplusplus\46_the_arrow_operator_in_cplusplus\the_arrow-operator.cpp(42): error C2065: 'vec': undeclared identifier
+c:\dev\thechernoproject\46_the_arrow_operator_in_cplusplus\46_the_arrow_operator_in_cplusplus\the_arrow-operator.cpp(44): error C2065: 'vec': undeclared identifier
+c:\dev\thechernoproject\46_the_arrow_operator_in_cplusplus\46_the_arrow_operator_in_cplusplus\the_arrow-operator.cpp(44): error C2059: syntax error: ')'
