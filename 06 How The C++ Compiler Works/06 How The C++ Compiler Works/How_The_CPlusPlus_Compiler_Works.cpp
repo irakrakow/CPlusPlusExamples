@@ -50,8 +50,19 @@ The #if preprocessor statement lets us include or exclude code based on a condit
 
 The .obj file (open in text editor) produces machine code, not readible.
 
-(11:58)
+Get assembler output - set Output switch in Settings.
+Assembler Output set to Assembly Only Listing (/PA).
+Outputs .asm file.  Can see the assembler instructions (IMUL shows it)
 
+Debug does not do any optimization.
+RTC (run time checks is code that helps with debugginig.
+
+If the compiler sees that two constant values are being multiplied, then there is
+no need to generate an IMUL instruction because it can figure out to return 10
+This is called "constant folding".
+
+Function signature uniquely defines the function.
+Compiler generates a call instruction when you call a function.
 
 */
 
