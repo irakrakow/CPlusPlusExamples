@@ -27,7 +27,7 @@
 	Mutable allows a variable in a class to be modified even if the function
 	referencing the variable is const.
 
-	Pass by const reference (const ref*) because we don't need to copy 
+	Pass by const reference (const ref&) because we don't need to copy 
 	variables unnecessarily.
 
 */
