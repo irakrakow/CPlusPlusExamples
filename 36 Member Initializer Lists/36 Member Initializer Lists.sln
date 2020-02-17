@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.852
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "36 Member Initializer Lists", "36 Member Initializer Lists\36 Member Initializer Lists.vcxproj", "{675B47A0-DF3A-48EF-A877-882FD4260083}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{675B47A0-DF3A-48EF-A877-882FD4260083}.Debug|x64.ActiveCfg = Debug|x64
+		{675B47A0-DF3A-48EF-A877-882FD4260083}.Debug|x64.Build.0 = Debug|x64
+		{675B47A0-DF3A-48EF-A877-882FD4260083}.Debug|x86.ActiveCfg = Debug|Win32
+		{675B47A0-DF3A-48EF-A877-882FD4260083}.Debug|x86.Build.0 = Debug|Win32
+		{675B47A0-DF3A-48EF-A877-882FD4260083}.Release|x64.ActiveCfg = Release|x64
+		{675B47A0-DF3A-48EF-A877-882FD4260083}.Release|x64.Build.0 = Release|x64
+		{675B47A0-DF3A-48EF-A877-882FD4260083}.Release|x86.ActiveCfg = Release|Win32
+		{675B47A0-DF3A-48EF-A877-882FD4260083}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {02862C5A-9D23-4B0E-8ECC-88259BC2D477}
+	EndGlobalSection
+EndGlobal
