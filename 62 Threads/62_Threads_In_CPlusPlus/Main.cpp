@@ -9,7 +9,7 @@
 	When you pass a thread object to the constructor 
 	called and the thread is started.
 
-	thread.join waits until the thread finishes.
+	thread.join waits until the worker thread finishes.
 
 */
 #include <iostream>
@@ -27,21 +27,25 @@ void DoWork()
 	{
 		std::cout << "Working...\n" << std::endl;
 		// gives commands to the current thread.
-		std::this_thread::sleep_for(1s);
+		std::this_thread::sleep_for(10s);
 	}
 }
 
 int main()
 {
+	// Start the DoWork function on the worker thread
 	std::thread worker(DoWork);
 
 	//make the main thread wait until DoWork finishes
 	//block current thread until DoWork finishes.
+	
 	std::cin.get();
 	//force DoWork to complete
 	s_Finished = true;
+	// since s_Finished is true, worker thread will exit the while loop and finish.
 
 	worker.join();
+	std::cout << "worker thread has completed...\n";
 	std::cout << "Finished." << std::endl;
 	std::cout << "Finished thread id=" << std::this_thread::get_id() << std::endl;
 
