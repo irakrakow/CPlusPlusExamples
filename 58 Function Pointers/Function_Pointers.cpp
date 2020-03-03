@@ -12,15 +12,29 @@
 
 	Function pointers point to the address of the function in our binary.
 
-	Resume at 7:52.
+	7:52 starts iterating over vector elements using a function pointer
 
 */
 // First thing - classic function
 #include <iostream>
+#include <vector>
 
 void HelloWorld()
 {
 	std::cout << "Hello World" << std::endl;
+}
+
+void PrintValue(int value)
+{
+	std::cout << "Value: " << value << std::endl;
+}
+
+
+void ForEach(const std::vector<int>& values, void(*func)(int))
+{
+	for (int value : values)
+		func(value);
+
 }
 
 
@@ -51,6 +65,15 @@ int main()
 	typedef void(*HelloWorldFunction)();
 	HelloWorldFunction f = HelloWorld;
 	f();
+
+	//=======================Iterating over a vector to print a value with function pointer==========================================
+	std::cout << "=====using ForEach and  PrintValue functions=====" << std::endl;
+	std::vector<int> values = { 3, 5, 4, 2, 3 };
+	// see ForEach and PrintValue functions above
+	ForEach(values, PrintValue);
+
+	std::cout << "=====using lambda function instead=====" << std::endl;
+	ForEach(values, [](int value) {std::cout << "Value: " << value << std::endl; });
 
 	std::cin.get();
 	return 0;
